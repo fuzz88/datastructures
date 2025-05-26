@@ -31,4 +31,6 @@ class Trie(object):
                 if node.letter == letter:
                     self.current_node = node
                     break
+            else:
+                return False
         return self.current_node.end_of_word
